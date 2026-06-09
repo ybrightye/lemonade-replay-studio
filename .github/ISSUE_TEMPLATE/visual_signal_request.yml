@@ -1,0 +1,46 @@
+name: Visual Signal Request
+description: Request a new game HUD or screen signal to detect.
+title: "[Visual Signal]: "
+labels: ["visual-signal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Visual signals are small, named screen regions that can add candidates before Lemonade ranks the final moments. Good examples are HP bars, kill feeds, KDA, minimaps, and chat/reaction overlays.
+  - type: input
+    id: game
+    attributes:
+      label: Game or app
+      placeholder: League of Legends, Valorant, Fortnite, OBS recording, Discord stream
+    validations:
+      required: true
+  - type: input
+    id: signal
+    attributes:
+      label: Signal to track
+      placeholder: HP bar, kill feed, KDA, minimap, damage numbers, chat overlay
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Screen location
+      description: Where does this signal usually appear?
+      placeholder: Top right, lower right, top center, fixed HUD area, etc.
+    validations:
+      required: false
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this matters
+      description: What replay-worthy moment would this help detect?
+      placeholder: A kill-feed spike often means a fight just happened.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example screenshot or clip
+      description: Attach a screenshot with the relevant region marked, if possible.
+    validations:
+      required: false

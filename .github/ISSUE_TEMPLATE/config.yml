@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Lemonade project
+    url: https://github.com/lemonade-sdk/lemonade
+    about: For Lemonade runtime bugs that are not specific to Replay Studio.

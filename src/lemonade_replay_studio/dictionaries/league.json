@@ -1,0 +1,11 @@
+{
+  "name": "league",
+  "length_bonus": true,
+  "groups": [
+    { "words": ["laugh", "laughs", "laughing", "hahaha", "lol"], "weight": 2.5, "label": "laughter" },
+    { "words": ["died", "die", "dead", "death", "killed", "int", "feeding", "throw", "thrown"], "weight": 2.0, "label": "death or throw reaction" },
+    { "words": ["oh no", "oh shit", "fuck", "shit", "wow", "my god", "what the"], "weight": 1.8, "label": "strong reaction" },
+    { "words": ["pentakill", "ace", "clutch", "outplay", "flash", "stun", "ult", "all in", "let's go"], "weight": 1.6, "label": "clutch play" },
+    { "words": ["baron", "dragon", "drake", "nashor", "tower", "inhib", "teamfight", "gank", "jungler"], "weight": 0.7, "label": "objective or fight context" }
+  ]
+}

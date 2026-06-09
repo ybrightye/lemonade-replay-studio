@@ -1,0 +1,68 @@
+name: Bug Report
+description: Setup, Lemonade, FFmpeg, export, or report problems.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. If you can include `lrs doctor` output and `moments.json`, it is much easier to debug without needing your source video.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+      placeholder: The analysis finished, but the HTML report did not load the highlight reel.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command
+      description: Paste the command you ran.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: lrs doctor output
+      description: Paste the relevant `lrs doctor` output.
+      render: text
+    validations:
+      required: false
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Windows 11, macOS 15, Ubuntu 24.04
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware
+      placeholder: CPU, GPU/NPU, RAM
+    validations:
+      required: false
+  - type: input
+    id: lemonade
+    attributes:
+      label: Lemonade version
+      placeholder: 10.6.0
+    validations:
+      required: false
+  - type: input
+    id: models
+    attributes:
+      label: Models
+      placeholder: Qwen3-8B-GGUF + Whisper-Tiny
+    validations:
+      required: false
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Artifacts
+      description: Attach or paste `moments.json`, `discord_recap.md`, or relevant terminal output. Avoid uploading copyrighted source video unless you have permission.
+    validations:
+      required: false

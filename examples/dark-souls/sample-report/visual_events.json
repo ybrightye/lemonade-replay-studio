@@ -1,0 +1,12 @@
+{
+  "events": [
+    {
+      "timestamp": 990.0,
+      "score": 0.05493827160493827,
+      "signal": "hp_bar",
+      "roi": "hp_bar",
+      "before_path": "visual/hp_bar_events/01_00990_before.jpg",
+      "after_path": "visual/hp_bar_events/01_00990_after.jpg"
+    }
+  ]
+}

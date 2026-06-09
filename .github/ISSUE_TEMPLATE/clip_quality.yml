@@ -1,0 +1,66 @@
+name: Clip Quality Feedback
+description: Tell us whether the selected moments were actually worth watching.
+title: "[Clip Quality]: "
+labels: ["clip-quality"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the most useful feedback for improving Replay Studio. `moments.json` is especially helpful and usually does not require sharing your source video.
+  - type: input
+    id: content
+    attributes:
+      label: Game or recording type
+      placeholder: Dark Souls, League of Legends, Valorant, podcast, lecture
+    validations:
+      required: true
+  - type: input
+    id: length
+    attributes:
+      label: Recording length
+      placeholder: 20 minutes, 1 hour, 3 hours
+    validations:
+      required: false
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal prompt
+      description: Paste the `--goal` text, if you used one.
+      placeholder: Find funny friend reactions, deaths, HP drops, and insults.
+    validations:
+      required: false
+  - type: textarea
+    id: worked
+    attributes:
+      label: What worked?
+      description: Which selected clips felt good or replay-worthy?
+    validations:
+      required: true
+  - type: textarea
+    id: missed
+    attributes:
+      label: What did it miss?
+      description: What obvious moments should Replay Studio have picked?
+    validations:
+      required: false
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What felt wrong?
+      description: Were any clips boring, too long, too short, duplicated, or cut awkwardly?
+    validations:
+      required: false
+  - type: input
+    id: models
+    attributes:
+      label: Models and hardware
+      placeholder: Qwen3-8B-GGUF + Whisper-Tiny on Windows / RTX 3060
+    validations:
+      required: false
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Artifacts
+      description: Attach or paste `moments.json` and `discord_recap.md` if you can.
+    validations:
+      required: false

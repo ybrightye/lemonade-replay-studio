@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lemonade Replay Studio Moment Map</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background: #101214; color: #f2f4f8; }
+    main { max-width: 1040px; margin: 0 auto; padding: 32px 20px 56px; }
+    h1 { font-size: 32px; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin: 8px 0 8px; }
+    .sub { color: #a8b0bd; margin: 0 0 24px; }
+    .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 18px 0 26px; }
+    .stat { border: 1px solid #2b333d; border-radius: 8px; padding: 12px; background: #171a1f; }
+    .stat strong { display: block; font-size: 22px; }
+    .stat span { color: #a8b0bd; font-size: 13px; }
+    article, .reel { border: 1px solid #2b333d; border-radius: 8px; padding: 18px; margin: 16px 0; background: #171a1f; }
+    .section-head, .card-head { display: flex; align-items: center; gap: 10px; justify-content: space-between; flex-wrap: wrap; }
+    .card-head { justify-content: flex-start; color: #a8b0bd; font-size: 14px; }
+    .rank { color: #f6c85f; font-weight: 700; }
+    .time { color: #8fd6ff; }
+    .score { color: #9ed6b5; }
+    p { color: #dce2ea; line-height: 1.5; }
+    blockquote { margin: 12px 0; color: #d6dde8; border-left: 3px solid #f6c85f; padding-left: 12px; }
+    .download { color: #8fd6ff; text-decoration: none; font-size: 14px; }
+    .download:hover { text-decoration: underline; }
+    .visual { margin: 14px 0; border-top: 1px solid #2b333d; padding-top: 12px; }
+    .visual h3 { margin: 0 0 8px; font-size: 15px; color: #f2f4f8; }
+    .visual p { margin: 0 0 10px; color: #a8b0bd; font-size: 13px; }
+    .visual-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .visual-grid figure { margin: 0; }
+    .visual-grid img { width: 100%; border-radius: 6px; border: 1px solid #2b333d; background: #000; }
+    .visual-grid figcaption { margin-top: 4px; font-size: 12px; color: #a8b0bd; }
+    video { width: 100%; max-height: 560px; background: #000; border-radius: 6px; margin-top: 12px; }
+    @media (max-width: 720px) {
+      .stats { grid-template-columns: 1fr; }
+      .visual-grid { grid-template-columns: 1fr; }
+      main { padding: 24px 14px 40px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Lemonade Replay Studio</h1>
+    <p class="sub">Local replay map generated from recording analysis. Source timestamps are burned into each clip.</p>
+    <section class="stats" aria-label="summary">
+      <div class="stat"><strong>6</strong><span>selected moments</span></div>
+      <div class="stat"><strong>01:25</strong><span>highlight reel length</span></div>
+      <div class="stat"><strong>local</strong><span>Lemonade STT + LLM workflow</span></div>
+    </section>
+    
+        <section class="reel">
+          <div class="section-head">
+            <h2>Combined Highlight Reel</h2>
+            <a class="download" href="highlight_reel.mp4" download>Download reel</a>
+          </div>
+          <video controls src="highlight_reel.mp4"></video>
+        </section>
+        
+    
+            <article>
+              <div class="card-head">
+                <span class="rank">#1</span>
+                <span class="time">02:58 - 03:09</span>
+                <span class="score">score 9</span>
+              </div>
+              <h2>Reclusive Lord Insults</h2>
+              <p>Hilarious insults and absurd descriptions of the reclusive lord.</p>
+              <blockquote>fucking capital at peace shit son *laughs* Pain and gas Bitchy old hoe</blockquote>
+              
+              <a class="download" href="clips/01_02m58s.mp4" download>Download clip</a>
+              <video controls src="clips/01_02m58s.mp4"></video>
+            </article>
+            
+            <article>
+              <div class="card-head">
+                <span class="rank">#2</span>
+                <span class="time">06:00 - 06:17</span>
+                <span class="score">score 9</span>
+              </div>
+              <h2>Plastic Surgery Joke</h2>
+              <p>Absurd comment about giving someone plastic surgery</p>
+              <blockquote>He just wants to give this guy a plastic surgery.</blockquote>
+              
+              <a class="download" href="clips/02_06m00s.mp4" download>Download clip</a>
+              <video controls src="clips/02_06m00s.mp4"></video>
+            </article>
+            
+            <article>
+              <div class="card-head">
+                <span class="rank">#3</span>
+                <span class="time">10:15 - 10:28</span>
+                <span class="score">score 9</span>
+              </div>
+              <h2>You're a Little Bitch</h2>
+              <p>Player gets insulted and mocked after a quick death, with a humorous and cringey reaction.</p>
+              <blockquote>You're a little bitch. How are you like being hurt?</blockquote>
+              
+              <a class="download" href="clips/03_10m15s.mp4" download>Download clip</a>
+              <video controls src="clips/03_10m15s.mp4"></video>
+            </article>
+            
+            <article>
+              <div class="card-head">
+                <span class="rank">#4</span>
+                <span class="time">12:58 - 13:12</span>
+                <span class="score">score 9</span>
+              </div>
+              <h2>Death Precedent</h2>
+              <p>Player dies and jokes about enemies hitting them after death, with comedic frustration</p>
+              <blockquote>You set the precedent. (laughing) This is really, really upsetting.</blockquote>
+              
+              <a class="download" href="clips/04_12m58s.mp4" download>Download clip</a>
+              <video controls src="clips/04_12m58s.mp4"></video>
+            </article>
+            
+            <article>
+              <div class="card-head">
+                <span class="rank">#5</span>
+                <span class="time">14:46 - 14:58</span>
+                <span class="score">score 9</span>
+              </div>
+              <h2>Desperation and Death</h2>
+              <p>Player admits they're going to die and expresses confusion about how to avoid it</p>
+              <blockquote>No! I'm just gonna die. Oh, see, how do I?</blockquote>
+              
+              <a class="download" href="clips/05_14m46s.mp4" download>Download clip</a>
+              <video controls src="clips/05_14m46s.mp4"></video>
+            </article>
+            
+            <article>
+              <div class="card-head">
+                <span class="rank">#6</span>
+                <span class="time">16:10 - 16:28</span>
+                <span class="score">score 10</span>
+              </div>
+              <h2>Friend Dies, Souls Dropped</h2>
+              <p>Friend dies early, leaving the player without souls, leading to panic and frustration.</p>
+              <blockquote>where is your friend you died earlier and dropped off your souls and I didn't go pick him up oh shit</blockquote>
+              
+      <section class="visual">
+        <h3>Visual Event Evidence</h3>
+        <p>red HP bar changed near 16:30 (hp_bar near 16:30, score 0.055)</p>
+        <div class="visual-grid">
+          <figure><img src="visual/hp_bar_events/01_00990_before.jpg" alt="Visual ROI before change"><figcaption>Before ROI crop</figcaption></figure>
+          <figure><img src="visual/hp_bar_events/01_00990_after.jpg" alt="Visual ROI after change"><figcaption>After ROI crop</figcaption></figure>
+        </div>
+      </section>
+    
+              <a class="download" href="clips/06_16m10s.mp4" download>Download clip</a>
+              <video controls src="clips/06_16m10s.mp4"></video>
+            </article>
+            
+  </main>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "dark-souls",
+  "length_bonus": true,
+  "groups": [
+    { "words": ["laugh", "laughs", "laughing", "hahaha", "lol"], "weight": 2.5, "label": "laughter" },
+    { "words": ["died", "die", "dead", "death", "killed", "dropped", "souls", "lost my souls", "you died"], "weight": 2.0, "label": "death or lost-souls reaction" },
+    { "words": ["oh no", "oh shit", "fuck", "shit", "wow", "my god", "goodness", "what the"], "weight": 1.8, "label": "strong reaction" },
+    { "words": ["nice", "let's go", "clutch", "watch this", "run", "attack", "parry", "dodge", "roll"], "weight": 1.2, "label": "active gameplay beat" },
+    { "words": ["dark souls", "boss", "enemy", "shield", "sword", "estus", "elixir", "bonfire", "invader"], "weight": 0.7, "label": "game-specific context" }
+  ]
+}
