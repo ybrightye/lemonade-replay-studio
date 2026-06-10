@@ -4,6 +4,8 @@ Turn long gameplay recordings into local AI highlight reels and moment maps, pow
 
 Lemonade Replay Studio analyzes a local recording, finds replay-worthy moments from commentary, exports short clips, builds a combined highlight reel, and writes a timestamped HTML moment map. The default AI path is local Lemonade STT plus local Lemonade LLM reasoning. FFmpeg handles deterministic media operations like probing, audio extraction, fades, overlays, and MP4 cutting.
 
+[![Watch the Lemonade Replay Studio demo](docs/demo-thumbnail.jpg)](https://youtu.be/dDbVivzlOs0)
+
 **Watch the demo:** [Lemonade Replay Studio on YouTube](https://youtu.be/dDbVivzlOs0)
 
 The current demo is gameplay-focused: give it a recording, a goal like "find funny deaths, panic, HP drops, and insults," and it produces a shareable replay report without cloud APIs or SaaS uploads.
